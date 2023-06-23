@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        @apply font-worksans
+    }
+    *,
+    *::before,
+    *::after {
+        @apply mx-0 px-0 py-0 
+    }
+    button {
+        @apply hover:bg-primary duration-300 hover:text-resi-white bg-transparent px-6 text-primary py-1  border-2 rounded-full border-primary
+    }
+    a {
+        @apply text-resi-darkblue hover:text-primary duration-300
+    }
+}
