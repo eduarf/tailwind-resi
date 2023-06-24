@@ -508,6 +508,8 @@ h1 {
 }
 
 a {
+  font-size: 1rem;
+  line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(67 65 117 / var(--tw-text-opacity));
   transition-duration: 300ms;
@@ -516,6 +518,13 @@ a {
 a:hover {
   --tw-text-opacity: 1;
   color: rgb(90 90 243 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  a {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 p {
@@ -696,6 +705,10 @@ p {
   width: 2rem;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -706,6 +719,10 @@ p {
 
 .grid-cols-grid-column {
   grid-template-columns: [container-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 10rem) [col-end]) [center-end] 1fr [container-end];
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-rows-grid-rows {
@@ -742,6 +759,14 @@ p {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .rounded {
@@ -808,8 +833,53 @@ p {
   line-height: 2.5rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.leading-normal {
+  line-height: 1.5;
 }
 
 .text-primary {

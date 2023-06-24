@@ -18,7 +18,7 @@
     @apply text-3xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl;
   }
   a {
-    @apply text-resi-darkblue hover:text-primary duration-300;
+    @apply text-resi-darkblue hover:text-primary duration-300 text-base lg:text-lg;
   }
   p {
     @apply text-sm sm:text-base md:text-lg lg:text-xl;
