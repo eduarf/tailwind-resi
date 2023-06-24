@@ -5,6 +5,9 @@ module.exports = {
       fontFamily: {
         worksans: ['Work Sans', 'sans-serif'],
       },
+      boxShadow: {
+        'customShadow': 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;',
+      },
       spacing: {
         '4vw': '4vw',
         '6vh': '6vh',
