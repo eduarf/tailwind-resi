@@ -16,11 +16,18 @@
         <!-- Header -->
         <header class="col-start-[container-start] col-end-[container-end]">
             <!-- Navbar Container-->
-            <div class="flex justify-between px-12 py-6">
+            <div class="flex justify-between px-12 py-6 relative">
+                <!-- Logo -->
                 <h1 class="text-4xl font-semibold text-primary">Resi.</h1> 
+               <!-- Hamburger -->
+               <div class="flex md:hidden flex-col gap-1 absolute right-10 top-8 cursor-pointer">
+                <span  class="h-1 rounded bg-primary w-8"></span>
+                <span  class="h-1 rounded bg-primary w-8"></span>
+                <span  class="h-1 rounded bg-primary w-8"></span>
+               </div>
                 <!-- Navbar -->
-            <nav class="flex gap-8 justify-center items-center">
-                <ul class="flex gap-4">
+            <nav class="hidden md:flex gap-8 justify-center items-center">
+                <ul class="flex gap-2 lg:gap-4">
                     <!-- a class'ları default olarak tanımlanmıştır  -->
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -36,35 +43,25 @@
 
 
         <!-- Header Content -->
-        <div class="flex h-full">
-            <!-- Header Left Content -->
-            <div class="text-resi-darkblue basis-1/2 -mt-10 pl-16 gap-8 leading-loose flex flex-col justify-center h-full">
-                <h1 class="text-5xl font-normal text-start">Easy Marketing Solutions <br>For Your Business</h1>
-                <!-- List Group -->
-                <div class="flex flex-col gap-2">
-                    <div class="flex gap-2 items-center">
-                        <i class="fa-solid fa-check text-primary"></i>
-                        <p>Dolorem ratione dolorum</p>
-                    </div>
-                    <div class="flex gap-2 items-center">
-                        <i class="fa-solid fa-check text-primary"></i>
-                        <p>Quo nihil natus ea non pariatur optio occaecati</p>
-                    </div>
-                    <div class="flex gap-2 items-center">
-                        <i class="fa-solid fa-check text-primary"></i>
-                        <p>Duis aute irure dolor in reprehenderit in</p>
-                    </div>
-                </div>
-                <!-- Button Group -->
-                <div class="flex gap-2">
-                  <button class="bg-primary text-resi-white hover:bg-primary-m hover:text-primary">Get Started</button>
-                  <button>Request a Quote</button>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 px-4vw py-6vh">
+            <!-- Left Content -->
+            <div class="flex flex-col justify-center gap-6">
+                <h1 class="text-resi-darkblue">Easy Marketing Solutions For Your Business</h1>
+                <!-- Lists -->
+                <ul class="flex flex-col gap-2">
+                    <li class="flex gap-2 items-center"><i class="fa-solid fa-check text-primary"></i><p>Dolorem ratione dolorum</p></li>
+                    <li class="flex gap-2 items-center"><i class="fa-solid fa-check text-primary"></i><p>Quo nihil natus ea non pariatur optio occaecati</p></li>
+                    <li class="flex gap-2 items-center"><i class="fa-solid fa-check text-primary"></i><p>Duis aute irure dolor in reprehenderit in</p></li>
+                </ul>
+                <!-- Button Container -->
+                <div class="flex gap-6">
+                    <button class="bg-primary hover:bg-resi-darkblue hover:border-resi-darkblue text-resi-white">Get Started</button>
+                    <button>Request a Quote</button>
                 </div>
             </div>
-
-            <!-- Header Svg -->
-            <div class="basis-1/2 grid place-items-center">
-                <object data="./images/header-svg.svg" type="image/svg+xml"></object>
+            <!-- Svg Container -->
+            <div class="flex items-center justify-center">
+                <object class="h-calcSvg" data="./images/header-svg.svg" type="image/svg+xml"></object>
             </div>
         </div>
 
