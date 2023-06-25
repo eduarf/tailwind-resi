@@ -7,6 +7,7 @@ module.exports = {
       },
       boxShadow: {
         'customShadow': 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;',
+        'trelloShadow': 'rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px',
       },
       spacing: {
         '4vw': '4vw',
