@@ -19,7 +19,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         "grid-column":
-          "[container-start] 1fr [center-start] repeat(12, [col-start] minmax(min-content, 10rem) [col-end]) [center-end] 1fr [container-end]",
+          "[container-start] 1fr [center-start] repeat(6, [col-start] minmax(min-content, 10.41rem) [col-end]) [center-end] 1fr [container-end]",
           // '2-auto-fr': 'repeat(auto-fit, minmax(30rem, 1fr))',
         },
       gridTemplateRows: {
