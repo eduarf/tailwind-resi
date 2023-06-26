@@ -687,6 +687,18 @@ p {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -729,6 +741,30 @@ p {
 
 .top-8 {
   top: 2rem;
+}
+
+.bottom-196 {
+  bottom: 45rem;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.bottom-96 {
+  bottom: 24rem;
+}
+
+.bottom-full {
+  bottom: 100%;
+}
+
+.bottom-20 {
+  bottom: 5rem;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .col-start-1 {
@@ -883,12 +919,28 @@ p {
   height: 100%;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
 .max-h-0 {
   max-height: 0px;
 }
 
 .max-h-36 {
   max-height: 9rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-11 {
@@ -913,10 +965,6 @@ p {
 
 .w-full {
   width: 100%;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .-translate-x-2\/4 {
@@ -1101,11 +1149,6 @@ p {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-}
-
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
@@ -1209,16 +1252,6 @@ p {
   padding-bottom: 2rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1285,6 +1318,10 @@ p {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .uppercase {
@@ -1387,6 +1424,10 @@ p {
   opacity: 0;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .shadow-customShadow {
   --tw-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;;
   --tw-shadow-colored: 0px 5px 15px 0px; var(--tw-shadow-color);
@@ -1415,8 +1456,20 @@ p {
   transition-duration: 150ms;
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .hover\:border-primary:hover {
@@ -1437,6 +1490,11 @@ p {
 .hover\:bg-resi-darkblue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(67 65 117 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-resi-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:text-primary:hover {
@@ -1478,6 +1536,11 @@ p {
 .group:hover .group-hover\:bg-turquoise {
   --tw-bg-opacity: 1;
   background-color: rgb(33 221 210 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:bg-resi-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:text-resi-white {
@@ -1544,17 +1607,13 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:flex-row {
-    flex-direction: row;
-  }
-
-  .md\:gap-0 {
-    gap: 0px;
-  }
-
   .md\:px-44 {
     padding-left: 11rem;
     padding-right: 11rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 
   .md\:text-3xl {
@@ -1570,6 +1629,16 @@ p {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -1632,6 +1701,10 @@ p {
     padding-right: 0px;
   }
 
+  .lg\:text-center {
+    text-align: center;
+  }
+
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1640,5 +1713,10 @@ p {
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
