@@ -8,6 +8,7 @@ module.exports = {
       boxShadow: {
         'customShadow': 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;',
         'trelloShadow': 'rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px',
+        'stickyShadow': 'rgba(0, 0, 0, 0.04) 0px 3px 5px',
       },
       spacing: {
         '4vw': '4vw',
@@ -16,6 +17,7 @@ module.exports = {
         '128': '30rem',
         '156': '38rem',
         '196': '45rem',
+        '256': '60rem',
       },
       gridTemplateColumns: {
         "grid-column":
