@@ -831,20 +831,12 @@ p {
   margin-bottom: 1rem;
 }
 
-.ml-6 {
-  margin-left: 1.5rem;
-}
-
-.ml-20 {
-  margin-left: 5rem;
-}
-
-.-ml-20 {
-  margin-left: -5rem;
-}
-
 .ml-0 {
   margin-left: 0px;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .inline-block {
@@ -923,8 +915,8 @@ p {
   width: 100%;
 }
 
-.w-1\/3 {
-  width: 33.333333%;
+.w-10 {
+  width: 2.5rem;
 }
 
 .-translate-x-2\/4 {
@@ -963,16 +955,8 @@ p {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .grid-cols-grid-column {
   grid-template-columns: [container-start] 1fr [center-start] repeat(6, [col-start] minmax(min-content, 10.41rem) [col-end]) [center-end] 1fr [container-end];
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-rows-1 {
@@ -1117,19 +1101,14 @@ p {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 33 122 / var(--tw-bg-opacity));
-}
-
-.bg-blue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 174 255 / var(--tw-bg-opacity));
-}
-
 .bg-slate-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
 .bg-center {
@@ -1190,6 +1169,11 @@ p {
   padding-right: 1.5rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1225,9 +1209,14 @@ p {
   padding-bottom: 2rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .text-center {
@@ -1505,6 +1494,10 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
   .sm\:gap-0 {
     gap: 0px;
   }
@@ -1549,6 +1542,14 @@ p {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:gap-0 {
+    gap: 0px;
   }
 
   .md\:px-44 {
@@ -1602,6 +1603,10 @@ p {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .lg\:gap-0 {
+    gap: 0px;
+  }
+
   .lg\:gap-10 {
     gap: 2.5rem;
   }
@@ -1620,10 +1625,6 @@ p {
 
   .lg\:gap-8 {
     gap: 2rem;
-  }
-
-  .lg\:gap-0 {
-    gap: 0px;
   }
 
   .lg\:px-0 {
