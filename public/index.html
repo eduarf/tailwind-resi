@@ -725,10 +725,83 @@
 
 
         <!-- Contact Section -->
-        <section class="px-4vw py-6vh col-start-[container-start] col-end-[container-end] bg-slate-800 h-screen"></section>
+        <section class="flex flex-col gap-8 px-4vw py-6vh col-start-[container-start] col-end-[container-end] bg-resi-grey">
+            <!-- Heading -->
+            <div class="flex flex-col items-center gap-12">
+                <h2 class="text-2xl lg:text-4xl font-normal text-resi-darkblue relative inline-block text-center">CONTACT 
+                    <span class="absolute h-1 w-2/4 bg-primary -bottom-6 left-1/2 -translate-x-2/4"></span>
+                </h2>
+                <p class="text-justify sm:text-center text-sm lg:text-base">
+                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. 
+                    Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. 
+                    Quia fugiat sit in iste officiis commodi quidem hic quas.
+                </p>
+            </div>
+
+            <!-- Content -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Container Adress -->
+                <div class="grid grid-rows-2 gap-4">
+                    <!-- Top -->
+                    <div class="shadow-trelloShadow bg-resi-white rounded flex flex-col items-center justify-center gap-2">
+                        <i class="fa-solid fa-location-dot text-primary text-3xl"></i>
+                        <h2 class="text-lg sm:text-xl font-medium text-slate-500">Our Adress</h2>
+                        <p class="text-xs sm:text-sm">A108 Adam Street, New York, NY 535022</p>
+                    </div>
+                    <!-- Bottom(Email, Call Us) -->
+                    <div class="grid grid-cols-2 gap-8">
+                        <!-- Email -->
+                        <div class="shadow-trelloShadow bg-resi-white px-4 py-8 rounded gap-4 flex flex-col items-center justify-center">
+                            <i class="fa-regular fa-envelope text-primary text-3xl"></i>
+                            <h2 class="text-lg sm:text-xl font-medium text-slate-500">Email Us</h2>
+                            <div class="flex flex-col gap2 items-center">
+                                <p class="text-xs sm:text-sm">info@example.com</p>
+                                <p class="text-xs sm:text-sm">contact@example.com</p>
+                            </div>
+                        </div>
+                        <!-- Call Us -->
+                        <div class="shadow-trelloShadow bg-resi-white px-4 py-8 rounded flex flex-col gap-4 items-center justify-center">
+                            <i class="fa-solid fa-phone text-primary text-3xl"></i>
+                            <h2 class="text-lg sm:text-xl font-medium text-slate-500">Call Us</h2>
+                            <div class="flex flex-col items-center">
+                                <p class="text-xs sm:text-sm">+1 5589 55488 55</p>
+                                <p class="text-xs sm:text-sm">+1 6678 254445 41</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Form -->
+                <form class="bg-resi-white px-6 py-6 rounded shadow-trelloShadow flex flex-col gap-6">
+                    <!-- Input Container -->
+                    <div class="grid grid-cols-2 gap-6">
+                        <input style="outline: none" type="text" placeholder="Your Name" class="rounded border focus:border-primary px-2 py-3 text-sm transition-colors">
+                        <input style="outline: none" type="email" placeholder="Your Email" class="rounded border focus:border-primary px-2 py-3 text-sm transition-colors">
+                    </div>
+
+                    <!-- Input Container -->
+                    <div class="grid grid-rows-1">
+                        <input style="outline: none"  placeholder="Subject" type="text" class="rounded border focus:border-primary px-2 py-3 text-sm transition-colors">
+                    </div>
+
+                    <!-- Input Container -->
+                    <div class="grid grid-rows-1">
+                        <textarea style="outline: none; min-height: 8rem;" placeholder="Message" class="resize-none rounded border focus:border-primary px-2 py-3 text-sm transition-colors max-h-36"></textarea>
+                    </div>
+                    <div class="grid place-items-center">
+                        <button class="bg-primary text-resi-white hover:bg-resi-darkblue">Send Message</button>
+                    </div>
+                </form>
+                <div>
+
+                </div>
+            </div>
+        </section>
 
 
         <!-- Footer Section -->
+        <section class="px-4vw py-6vh col-start-[container-start] col-end-[container-end] bg-blue h-screen"></section>
 
     </div>
 
