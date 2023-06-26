@@ -906,6 +906,16 @@ p {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.scale-y-105 {
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-y-100 {
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -918,16 +928,12 @@ p {
   grid-template-columns: repeat(10, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-grid-column {
   grid-template-columns: [container-start] 1fr [center-start] repeat(6, [col-start] minmax(min-content, 10.41rem) [col-end]) [center-end] 1fr [container-end];
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-rows-grid-rows {
@@ -978,8 +984,16 @@ p {
   gap: 3rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-4 {
@@ -1014,6 +1028,11 @@ p {
   border-radius: 9999px;
 }
 
+.border-resi-darkblue {
+  --tw-border-opacity: 1;
+  border-color: rgb(67 65 117 / var(--tw-border-opacity));
+}
+
 .bg-green-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
@@ -1024,6 +1043,11 @@ p {
   background-color: rgb(90 90 243 / var(--tw-bg-opacity));
 }
 
+.bg-resi-darkblue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(67 65 117 / var(--tw-bg-opacity));
+}
+
 .bg-resi-grey {
   --tw-bg-opacity: 1;
   background-color: rgb(238 238 245 / var(--tw-bg-opacity));
@@ -1032,11 +1056,6 @@ p {
 .bg-resi-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 .bg-slate-800 {
@@ -1056,6 +1075,11 @@ p {
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-12 {
@@ -1093,9 +1117,29 @@ p {
   padding-bottom: 6vh;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .text-center {
@@ -1248,6 +1292,20 @@ p {
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
+.text-resi-grey {
+  --tw-text-opacity: 1;
+  color: rgb(238 238 245 / var(--tw-text-opacity));
+}
+
+.text-slate-500 {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.line-through {
+  text-decoration-line: line-through;
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -1280,6 +1338,11 @@ p {
   transition-duration: 300ms;
 }
 
+.hover\:border-primary:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(90 90 243 / var(--tw-border-opacity));
+}
+
 .hover\:border-resi-darkblue:hover {
   --tw-border-opacity: 1;
   border-color: rgb(67 65 117 / var(--tw-border-opacity));
@@ -1288,6 +1351,11 @@ p {
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(90 90 243 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-primary-m:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(206 211 252 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-resi-darkblue:hover {
@@ -1350,6 +1418,41 @@ p {
     padding-bottom: 1rem;
   }
 
+  .sm\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .sm\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .sm\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .sm\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .sm\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .sm\:px-44 {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+
+  .sm\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
   .sm\:text-center {
     text-align: center;
   }
@@ -1368,8 +1471,24 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:text-center {
-    text-align: center;
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:px-36 {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:px-44 {
+    padding-left: 11rem;
+    padding-right: 11rem;
   }
 }
 
@@ -1378,16 +1497,17 @@ p {
     grid-column-start: container-start;
   }
 
-  .lg\:col-start-\[center-start\] {
-    grid-column-start: center-start;
-  }
-
   .lg\:col-end-\[container-end\] {
     grid-column-end: container-end;
   }
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:scale-y-105 {
+    --tw-scale-y: 1.05;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:grid-cols-2 {
@@ -1422,13 +1542,13 @@ p {
     gap: 2rem;
   }
 
-  .lg\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .lg\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
