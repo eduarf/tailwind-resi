@@ -715,6 +715,10 @@ p {
   left: 50%;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .right-10 {
   right: 2.5rem;
 }
@@ -831,6 +835,18 @@ p {
   margin-left: 1.5rem;
 }
 
+.ml-20 {
+  margin-left: 5rem;
+}
+
+.-ml-20 {
+  margin-left: -5rem;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -875,10 +891,6 @@ p {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .max-h-0 {
   max-height: 0px;
 }
@@ -909,6 +921,10 @@ p {
 
 .w-full {
   width: 100%;
+}
+
+.w-1\/3 {
+  width: 33.333333%;
 }
 
 .-translate-x-2\/4 {
@@ -947,8 +963,16 @@ p {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .grid-cols-grid-column {
   grid-template-columns: [container-start] 1fr [center-start] repeat(6, [col-start] minmax(min-content, 10.41rem) [col-end]) [center-end] 1fr [container-end];
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-rows-1 {
@@ -965,10 +989,6 @@ p {
 
 .grid-rows-portfolio {
   grid-template-rows: repeat(13, 8vh);
-}
-
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1077,11 +1097,6 @@ p {
   border-color: rgb(238 238 245 / var(--tw-border-opacity));
 }
 
-.bg-blue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 174 255 / var(--tw-bg-opacity));
-}
-
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(90 90 243 / var(--tw-bg-opacity));
@@ -1100,6 +1115,21 @@ p {
 .bg-resi-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 33 122 / var(--tw-bg-opacity));
+}
+
+.bg-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 174 255 / var(--tw-bg-opacity));
+}
+
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 .bg-center {
@@ -1140,6 +1170,11 @@ p {
   padding-right: 0.5rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1158,6 +1193,11 @@ p {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-3 {
@@ -1183,6 +1223,11 @@ p {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .text-center {
@@ -1460,8 +1505,8 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
+  .sm\:gap-0 {
+    gap: 0px;
   }
 
   .sm\:px-28 {
@@ -1478,18 +1523,22 @@ p {
     text-align: center;
   }
 
-  .sm\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 768px) {
+  .md\:-ml-20 {
+    margin-left: -5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1500,10 +1549,6 @@ p {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
   .md\:px-44 {
@@ -1523,16 +1568,6 @@ p {
 
   .md\:text-lg {
     font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
@@ -1585,6 +1620,10 @@ p {
 
   .lg\:gap-8 {
     gap: 2rem;
+  }
+
+  .lg\:gap-0 {
+    gap: 0px;
   }
 
   .lg\:px-0 {
